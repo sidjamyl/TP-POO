@@ -9,31 +9,31 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox spacing="10.0" xmlns="http://javafx.com/javafx/8.0.202" xmlns:fx="http://javafx.com/fxml/1" fx:controller="transport.control.TicketListController">
+<VBox spacing="10.0" style="-fx-background-color: #7F55B1;" xmlns="http://javafx.com/javafx/8.0.202" xmlns:fx="http://javafx.com/fxml/1" fx:controller="transport.control.TicketListController">
    <children>
       <HBox alignment="CENTER_LEFT" spacing="10.0">
          <children>
-            <Label text="Transport Titles">
+            <Label style="-fx-text-fill: #FFE1E0;" text="Transport Titles">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>
             </Label>
-            <Label fx:id="titleCountLabel" text="Total: 0 titles" />
+            <Label fx:id="titleCountLabel" style="-fx-text-fill: #FFE1E0;" text="Total: 0 titles" />
             <HBox alignment="CENTER_RIGHT" spacing="10.0" HBox.hgrow="ALWAYS">
                <children>
-                  <Button mnemonicParsing="false" onAction="#handleRefresh" text="Refresh" />
+                  <Button mnemonicParsing="false" onAction="#handleRefresh" style="-fx-background-color: #F49BAB; -fx-text-fill: #7F55B1;" text="Refresh" />
                </children>
             </HBox>
          </children>
       </HBox>
-      <TableView fx:id="ticketsTable" prefHeight="400.0">
+      <TableView fx:id="ticketsTable" prefHeight="400.0" style="-fx-background-color: #FFE1E0;">
         <columns>
-          <TableColumn fx:id="idColumn" prefWidth="75.0" text="ID" />
-          <TableColumn fx:id="typeColumn" prefWidth="100.0" text="Type" />
-            <TableColumn fx:id="ownerColumn" prefWidth="150.0" text="Owner" />
-            <TableColumn fx:id="dateColumn" prefWidth="120.0" text="Purchase Date" />
-            <TableColumn fx:id="priceColumn" prefWidth="80.0" text="Price" />
-            <TableColumn fx:id="validityColumn" prefWidth="80.0" text="Status" />
+          <TableColumn fx:id="idColumn" prefWidth="75.0" style="-fx-background-color: #9B7EBD; -fx-text-fill: #FFE1E0;" text="ID" />
+          <TableColumn fx:id="typeColumn" prefWidth="100.0" style="-fx-background-color: #9B7EBD; -fx-text-fill: #FFE1E0;" text="Type" />
+            <TableColumn fx:id="ownerColumn" prefWidth="150.0" style="-fx-background-color: #9B7EBD; -fx-text-fill: #FFE1E0;" text="Owner" />
+            <TableColumn fx:id="dateColumn" prefWidth="120.0" style="-fx-background-color: #9B7EBD; -fx-text-fill: #FFE1E0;" text="Purchase Date" />
+            <TableColumn fx:id="priceColumn" prefWidth="80.0" style="-fx-background-color: #9B7EBD; -fx-text-fill: #FFE1E0;" text="Price" />
+            <TableColumn fx:id="validityColumn" prefWidth="80.0" style="-fx-background-color: #9B7EBD; -fx-text-fill: #FFE1E0;" text="Status" />
         </columns>
       </TableView>
    </children>

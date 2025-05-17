@@ -9,37 +9,37 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox spacing="15.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="transport.control.TicketValidationController">
+<VBox spacing="15.0" style="-fx-background-color: #7F55B1;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="transport.control.TicketValidationController">
    <children>
-      <Label text="Ticket Validation">
+      <Label style="-fx-text-fill: #FFE1E0;" text="Ticket Validation">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
       <HBox alignment="CENTER_LEFT" spacing="10.0">
          <children>
-            <Label text="Enter Ticket ID:" />
-            <TextField fx:id="ticketIdField" prefWidth="200.0" />
-            <Button mnemonicParsing="false" onAction="#handleValidate" text="Validate" />
+            <Label style="-fx-text-fill: #FFE1E0;" text="Enter Ticket ID:" />
+            <TextField fx:id="ticketIdField" prefWidth="200.0" style="-fx-background-color: #9B7EBD; -fx-text-fill: #FFE1E0;" />
+            <Button mnemonicParsing="false" onAction="#handleValidate" style="-fx-background-color: #F49BAB; -fx-text-fill: #7F55B1;" text="Validate" />
          </children>
       </HBox>
       
-      <Label fx:id="messageLabel" text="" />
+      <Label fx:id="messageLabel" style="-fx-text-fill: #FFE1E0;" text="" />
       
-      <Separator />
+      <Separator style="-fx-background-color: #F49BAB;" />
       
-      <VBox fx:id="ticketInfoBox" spacing="10.0">
+      <VBox fx:id="ticketInfoBox" spacing="10.0" style="-fx-background-color: #FFE1E0; -fx-padding: 10;">
          <children>
-            <Label text="Ticket Information">
+            <Label style="-fx-text-fill: #7F55B1;" text="Ticket Information">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
-            <Label fx:id="typeLabel" text="Type: " />
-            <Label fx:id="ownerLabel" text="Owner: " />
-            <Label fx:id="purchaseDateLabel" text="Purchase Date: " />
-            <Label fx:id="expirationDateLabel" text="Expires: " />
-            <Label fx:id="statusLabel" text="Status: " />
+            <Label fx:id="typeLabel" style="-fx-text-fill: #7F55B1;" text="Type: " />
+            <Label fx:id="ownerLabel" style="-fx-text-fill: #7F55B1;" text="Owner: " />
+            <Label fx:id="purchaseDateLabel" style="-fx-text-fill: #7F55B1;" text="Purchase Date: " />
+            <Label fx:id="expirationDateLabel" style="-fx-text-fill: #7F55B1;" text="Expires: " />
+            <Label fx:id="statusLabel" style="-fx-text-fill: #7F55B1;" text="Status: " />
          </children>
          <padding>
             <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />

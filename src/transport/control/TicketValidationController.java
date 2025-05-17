@@ -57,6 +57,11 @@ public class TicketValidationController {
         displayTitleInfo(title);
     }
 
+    private void showMessage(String message, boolean isError) {
+        messageLabel.setText(message);
+        messageLabel.setStyle(isError ? "-fx-text-fill: #F49BAB;" : "-fx-text-fill: #FFE1E0;");
+    }
+
     private void displayTitleInfo(TransportTitle title) {
         boolean isValid = title.isValid();
 
@@ -76,8 +81,8 @@ public class TicketValidationController {
 
         // Set status
         statusLabel.setText("Status: " + (isValid ? "VALID" : "EXPIRED"));
-        statusLabel.setStyle(isValid ? "-fx-text-fill: green; -fx-font-weight: bold;"
-                : "-fx-text-fill: red; -fx-font-weight: bold;");
+        statusLabel.setStyle(isValid ? "-fx-text-fill: #7F55B1; -fx-font-weight: bold;"
+                : "-fx-text-fill: #F49BAB; -fx-font-weight: bold;");
 
         // Show validation result message
         if (isValid) {
@@ -87,10 +92,5 @@ public class TicketValidationController {
         }
 
         ticketInfoBox.setVisible(true);
-    }
-
-    private void showMessage(String message, boolean isError) {
-        messageLabel.setText(message);
-        messageLabel.setStyle(isError ? "-fx-text-fill: red;" : "-fx-text-fill: green;");
     }
 }

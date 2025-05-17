@@ -139,7 +139,7 @@ public class UserManagementController {
     private void showMessage(String message, boolean isError) {
         if (messageLabel != null) {
             messageLabel.setText(message);
-            messageLabel.setStyle(isError ? "-fx-text-fill: red;" : "-fx-text-fill: green;");
+            messageLabel.setStyle(isError ? "-fx-text-fill: #F49BAB;" : "-fx-text-fill: #FFE1E0;");
         }
     }
 }

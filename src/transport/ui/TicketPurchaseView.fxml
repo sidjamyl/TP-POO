@@ -11,9 +11,9 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox spacing="15.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="transport.control.TicketPurchaseController">
+<VBox spacing="15.0" style="-fx-background-color: #7F55B1;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="transport.control.TicketPurchaseController">
    <children>
-      <Label text="Ticket Purchase">
+      <Label style="-fx-text-fill: #FFE1E0;" text="Ticket Purchase">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
@@ -29,29 +29,29 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Label text="Select User:" />
-            <Label text="Title Type:" GridPane.rowIndex="1" />
-            <Label text="Payment Method:" GridPane.rowIndex="2" />
+            <Label style="-fx-text-fill: #FFE1E0;" text="Select User:" />
+            <Label style="-fx-text-fill: #FFE1E0;" text="Title Type:" GridPane.rowIndex="1" />
+            <Label style="-fx-text-fill: #FFE1E0;" text="Payment Method:" GridPane.rowIndex="2" />
             <HBox alignment="CENTER_LEFT" spacing="10.0" GridPane.columnIndex="1">
                <children>
-                  <ComboBox fx:id="userComboBox" prefWidth="200.0" />
-                  <Button mnemonicParsing="false" onAction="#handleAddUser" text="Add New" />
+                  <ComboBox fx:id="userComboBox" prefWidth="200.0" style="-fx-background-color: #9B7EBD;" />
+                  <Button mnemonicParsing="false" onAction="#handleAddUser" style="-fx-background-color: #F49BAB; -fx-text-fill: #7F55B1;" text="Add New" />
                </children>
             </HBox>
-            <ComboBox fx:id="titleTypeComboBox" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <ComboBox fx:id="paymentMethodComboBox" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <ComboBox fx:id="titleTypeComboBox" prefWidth="200.0" style="-fx-background-color: #9B7EBD;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <ComboBox fx:id="paymentMethodComboBox" prefWidth="200.0" style="-fx-background-color: #9B7EBD;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
          </children>
       </GridPane>
       
-      <VBox spacing="5.0">
+      <VBox spacing="5.0" style="-fx-background-color: #FFE1E0; -fx-padding: 10;">
          <children>
-            <Label text="Summary">
+            <Label style="-fx-text-fill: #7F55B1;" text="Summary">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
             </Label>
-            <Label fx:id="userCategoryLabel" text="Category: " />
-            <Label fx:id="priceLabel" text="Price: " />
+            <Label fx:id="userCategoryLabel" style="-fx-text-fill: #7F55B1;" text="Category: " />
+            <Label fx:id="priceLabel" style="-fx-text-fill: #7F55B1;" text="Price: " />
          </children>
          <padding>
             <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
@@ -60,8 +60,8 @@
       
       <HBox alignment="CENTER_RIGHT" spacing="10.0">
          <children>
-            <Label fx:id="messageLabel" prefHeight="17.0" prefWidth="300.0" />
-            <Button mnemonicParsing="false" onAction="#handlePurchase" text="Purchase" />
+            <Label fx:id="messageLabel" prefHeight="17.0" prefWidth="300.0" style="-fx-text-fill: #FFE1E0;" />
+            <Button mnemonicParsing="false" onAction="#handlePurchase" style="-fx-background-color: #F49BAB; -fx-text-fill: #7F55B1;" text="Purchase" />
          </children>
       </HBox>
    </children>

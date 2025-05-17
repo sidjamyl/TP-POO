@@ -10,37 +10,37 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane fx:id="mainPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="transport.control.MainController">
+<BorderPane fx:id="mainPane" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #7F55B1;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="transport.control.MainController">
    <top>
-      <MenuBar BorderPane.alignment="CENTER">
+      <MenuBar style="-fx-background-color: #7F55B1;" BorderPane.alignment="CENTER">
         <menus>
-          <Menu mnemonicParsing="false" text="File">
+          <Menu mnemonicParsing="false" style="-fx-text-fill: #FFE1E0;" text="File">
             <items>
-              <MenuItem mnemonicParsing="false" text="Exit" />
+              <MenuItem mnemonicParsing="false" style="-fx-background-color: #FFE1E0;" text="Exit" />
             </items>
           </Menu>
-          <Menu mnemonicParsing="false" text="Help">
+          <Menu mnemonicParsing="false" style="-fx-text-fill: #FFE1E0;" text="Help">
             <items>
-              <MenuItem mnemonicParsing="false" text="About" />
+              <MenuItem mnemonicParsing="false" style="-fx-background-color: #FFE1E0;" text="About" />
             </items>
           </Menu>
         </menus>
       </MenuBar>
    </top>
    <left>
-      <VBox prefHeight="571.0" prefWidth="200.0" spacing="10.0" style="-fx-background-color: #f0f0f0;" BorderPane.alignment="CENTER">
+      <VBox prefHeight="571.0" prefWidth="200.0" spacing="10.0" style="-fx-background-color: #9B7EBD;" BorderPane.alignment="CENTER">
          <children>
-            <Label onMouseClicked="#handleHomeAction" style="-fx-cursor: hand;" text="ESI-RUN">
+            <Label onMouseClicked="#handleHomeAction" style="-fx-cursor: hand; -fx-text-fill: #FFE1E0;" text="ESI-RUN">
                <font>
                   <Font name="System Bold" size="24.0" />
                </font>
             </Label>
-            <Label text="Transport Management System" />
-            <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleAddUserAction" text="Add User/Employee" />
-            <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleBuyTicketAction" text="Buy Ticket" />
-            <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleShowTicketsAction" text="View Tickets" />
-            <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleValidateTicketAction" text="Validate Ticket" />
-            <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleManageComplaintsAction" text="Manage Complaints" />
+            <Label style="-fx-text-fill: #FFE1E0;" text="Transport Management System" />
+            <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleAddUserAction" style="-fx-background-color: #F49BAB; -fx-text-fill: #7F55B1;" text="Add User/Employee" />
+            <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleBuyTicketAction" style="-fx-background-color: #F49BAB; -fx-text-fill: #7F55B1;" text="Buy Ticket" />
+            <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleShowTicketsAction" style="-fx-background-color: #F49BAB; -fx-text-fill: #7F55B1;" text="View Tickets" />
+            <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleValidateTicketAction" style="-fx-background-color: #F49BAB; -fx-text-fill: #7F55B1;" text="Validate Ticket" />
+            <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleManageComplaintsAction" style="-fx-background-color: #F49BAB; -fx-text-fill: #7F55B1;" text="Manage Complaints" />
          </children>
          <padding>
             <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
@@ -48,19 +48,19 @@
       </VBox>
    </left>
    <center>
-      <VBox fx:id="welcomeScreen" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+      <VBox fx:id="welcomeScreen" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #7F55B1;" BorderPane.alignment="CENTER">
          <children>
-            <Label text="Welcome to ESI-RUN">
+            <Label style="-fx-text-fill: #FFE1E0;" text="Welcome to ESI-RUN">
                <font>
                   <Font name="System Bold" size="24.0" />
                </font>
             </Label>
-            <Label text="Transport Management System">
+            <Label style="-fx-text-fill: #FFE1E0;" text="Transport Management System">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
-            <Label text="Select an option from the menu to get started" />
+            <Label style="-fx-text-fill: #FFE1E0;" text="Select an option from the menu to get started" />
          </children>
       </VBox>
    </center>

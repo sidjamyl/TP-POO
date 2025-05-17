@@ -150,6 +150,6 @@ public class TicketPurchaseController {
 
     private void showMessage(String message, boolean isError) {
         messageLabel.setText(message);
-        messageLabel.setStyle(isError ? "-fx-text-fill: red;" : "-fx-text-fill: green;");
+        messageLabel.setStyle(isError ? "-fx-text-fill: #F49BAB;" : "-fx-text-fill: #FFE1E0;");
     }
 }

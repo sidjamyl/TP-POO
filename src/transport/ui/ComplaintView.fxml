@@ -15,16 +15,16 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox spacing="15.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="transport.control.ComplaintController">
+<VBox spacing="15.0" style="-fx-background-color: #7F55B1;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="transport.control.ComplaintController">
    <children>
-      <Label text="Complaint Management">
+      <Label style="-fx-text-fill: #FFE1E0;" text="Complaint Management">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>
       </Label>
-      <VBox spacing="10.0">
+      <VBox spacing="10.0" style="-fx-background-color: #FFE1E0; -fx-padding: 10;">
          <children>
-            <Label text="Register New Complaint">
+            <Label style="-fx-text-fill: #7F55B1;" text="Register New Complaint">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
@@ -42,53 +42,53 @@
                   <RowConstraints minHeight="10.0" prefHeight="80.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <Label text="Complaint Type:" />
-                  <Label text="Entity Type:" GridPane.rowIndex="1" />
-                  <Label text="Reporter:" GridPane.rowIndex="2" />
-                  <Label text="Entity Concerned:" GridPane.rowIndex="3" />
-                  <Label text="Description:" GridPane.rowIndex="4" GridPane.valignment="TOP" />
-                  <ComboBox fx:id="typeComboBox" prefWidth="200.0" GridPane.columnIndex="1" />
-                  <ComboBox fx:id="entityTypeComboBox" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-                  <ComboBox fx:id="reporterComboBox" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-                  <ComboBox fx:id="entityComboBox" prefWidth="300.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
-                  <TextArea fx:id="descriptionArea" prefHeight="80.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <Label style="-fx-text-fill: #7F55B1;" text="Complaint Type:" />
+                  <Label style="-fx-text-fill: #7F55B1;" text="Entity Type:" GridPane.rowIndex="1" />
+                  <Label style="-fx-text-fill: #7F55B1;" text="Reporter:" GridPane.rowIndex="2" />
+                  <Label style="-fx-text-fill: #7F55B1;" text="Entity Concerned:" GridPane.rowIndex="3" />
+                  <Label style="-fx-text-fill: #7F55B1;" text="Description:" GridPane.rowIndex="4" GridPane.valignment="TOP" />
+                  <ComboBox fx:id="typeComboBox" prefWidth="200.0" style="-fx-background-color: #9B7EBD;" GridPane.columnIndex="1" />
+                  <ComboBox fx:id="entityTypeComboBox" prefWidth="200.0" style="-fx-background-color: #9B7EBD;" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <ComboBox fx:id="reporterComboBox" prefWidth="200.0" style="-fx-background-color: #9B7EBD;" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <ComboBox fx:id="entityComboBox" prefWidth="300.0" style="-fx-background-color: #9B7EBD;" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextArea fx:id="descriptionArea" prefHeight="80.0" style="-fx-background-color: #9B7EBD; -fx-text-fill: #FFE1E0;" GridPane.columnIndex="1" GridPane.rowIndex="4" />
                </children>
             </GridPane>
             <HBox alignment="CENTER_RIGHT" spacing="10.0">
                <children>
-                  <Label fx:id="messageLabel" prefHeight="17.0" prefWidth="300.0" />
-                  <Button mnemonicParsing="false" onAction="#handleAddComplaint" text="Register Complaint" />
+                  <Label fx:id="messageLabel" prefHeight="17.0" prefWidth="300.0" style="-fx-text-fill: #7F55B1;" />
+                  <Button mnemonicParsing="false" onAction="#handleAddComplaint" style="-fx-background-color: #F49BAB; -fx-text-fill: #7F55B1;" text="Register Complaint" />
                </children>
             </HBox>
          </children>
       </VBox>
       
-      <Separator />
+      <Separator style="-fx-background-color: #F49BAB;" />
       
       <VBox spacing="10.0">
          <children>
             <HBox alignment="CENTER_LEFT" spacing="10.0">
                <children>
-                  <Label text="All Complaints">
+                  <Label style="-fx-text-fill: #FFE1E0;" text="All Complaints">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
                   </Label>
                   <HBox alignment="CENTER_RIGHT" spacing="10.0" HBox.hgrow="ALWAYS">
                      <children>
-                        <Button mnemonicParsing="false" onAction="#handleRefresh" text="Refresh" />
+                        <Button mnemonicParsing="false" onAction="#handleRefresh" style="-fx-background-color: #F49BAB; -fx-text-fill: #7F55B1;" text="Refresh" />
                      </children>
                   </HBox>
                </children>
             </HBox>
-            <TableView fx:id="complaintsTable" prefHeight="200.0">
+            <TableView fx:id="complaintsTable" prefHeight="200.0" style="-fx-background-color: #FFE1E0;">
               <columns>
-                <TableColumn fx:id="idColumn" prefWidth="60.0" text="ID" />
-                <TableColumn fx:id="typeColumn" prefWidth="100.0" text="Type" />
-                <TableColumn fx:id="entityTypeColumn" prefWidth="100.0" text="Entity Type" />
-                <TableColumn fx:id="entityColumn" prefWidth="120.0" text="Entity" />
-                <TableColumn fx:id="reporterColumn" prefWidth="120.0" text="Reporter" />
-                <TableColumn fx:id="dateColumn" prefWidth="150.0" text="Date" />
+                <TableColumn fx:id="idColumn" prefWidth="60.0" style="-fx-background-color: #9B7EBD; -fx-text-fill: #FFE1E0;" text="ID" />
+                <TableColumn fx:id="typeColumn" prefWidth="100.0" style="-fx-background-color: #9B7EBD; -fx-text-fill: #FFE1E0;" text="Type" />
+                <TableColumn fx:id="entityTypeColumn" prefWidth="100.0" style="-fx-background-color: #9B7EBD; -fx-text-fill: #FFE1E0;" text="Entity Type" />
+                <TableColumn fx:id="entityColumn" prefWidth="120.0" style="-fx-background-color: #9B7EBD; -fx-text-fill: #FFE1E0;" text="Entity" />
+                <TableColumn fx:id="reporterColumn" prefWidth="120.0" style="-fx-background-color: #9B7EBD; -fx-text-fill: #FFE1E0;" text="Reporter" />
+                <TableColumn fx:id="dateColumn" prefWidth="150.0" style="-fx-background-color: #9B7EBD; -fx-text-fill: #FFE1E0;" text="Date" />
               </columns>
             </TableView>
          </children>
